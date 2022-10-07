@@ -92,9 +92,8 @@ public class HomePageTest extends BaseClass {
 
 	@Test(enabled = false)
 	public void get_attribute() {
-		String value1 = driver.findElement(By.xpath("//a[@id='av-logo-sprite']")).getAttribute("id");
-		String value2 = driver.findElement(By.xpath("//a[@class='nav-logo-link nav-progressive-attribute']"))
-				.getAttribute("class");
+		String value1 = driver.findElement(By.xpath("//a[@id='nav-logo-sprites']")).getAttribute("id");
+		String value2 = driver.findElement(By.xpath("//a[@class='nav-logo-link nav-progressive-attribute']")).getAttribute("class");
 		System.out.println("The value of the span Attribut is : " + value1);
 		System.out.println("The value of the span Attribut is : " + value2);
 	}
